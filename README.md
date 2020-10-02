@@ -88,20 +88,24 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 ![](Figures/HeatMap.png)
 
 4)Model 1 : OLS with All Feature
+	
 	Rsquare value is around 74%
     	But most feature have P value higher than 0.05 example age(p-value=0.825) and indus(p-value=0.765)
 
 5)Model 2: OLS dropping waste columns (indus, age)
-    	Thus after removing indus and age the R-square value is some what same i.e 74% thus we can see that age and indus does not add any 
+    	
+	Thus after removing indus and age the R-square value is some what same i.e 74% thus we can see that age and indus does not add any 
     	value.
 
 6)Model 3: OLS with LSTAT only
-  	  Consider feature which is highly correlated with output variable i.e lstat
+  	
+	Consider feature which is highly correlated with output variable i.e lstat
     	We can see that lstat gives around 55% accuracy
 
 ![](Figures/lstatOnly.png)
 
 7)Model 4: OLS with LSTAT & RM only
+	
 	R square value is around 63%
 
 ![](Figures/lstat%Rm.png)
@@ -119,8 +123,8 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 9)Model 6: OLS with LSTAT, RM & LSTAT,RM polynominal features
 
-   Manipulate some outlier of OLS(by doing log transformation) and Rm(replacing by mode)
-   Thus R-squar value for train is around 78% and test is 75%
+   	Manipulate some outlier of OLS(by doing log transformation) and Rm(replacing by mode)
+   	Thus R-squar value for train is around 78% and test is 75%
    
 ![](Figures/lstsat&Rmpolynomail.png)
 
