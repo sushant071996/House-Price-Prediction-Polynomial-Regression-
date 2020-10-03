@@ -84,73 +84,73 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 1)Univariant Analysis
 
-	![](Figures/Box&Histogram.png)
+![](Figures/Box&Histogram.png)
 
 2)Bivariant Analysis
 
-	![](Figures/RegressionPlot.png)
+![](Figures/RegressionPlot.png)
 
 3)Correlation Using HeatMap
 
-	![](Figures/HeatMap.png)
+![](Figures/HeatMap.png)
 
 4)Model 1 : OLS with All Feature
 
-	![](Figures/outputALL.png)
+![](Figures/outputALL.png)
 	
 	Rsquare value is around 74%
 	But most feature have P value higher than 0.05 example age(p-value=0.825) and indus(p-value=0.765)
 
 5)Model 2: OLS dropping waste columns (indus, age)
 
-	![](Figures/outputdrop.png)
+![](Figures/outputdrop.png)
     	
 	Thus after removing indus and age the R-square value is some what same i.e 74% thus we can see that age and indus does not add any 
     	value.
 
 6)Model 3: OLS with LSTAT only
 
-	![](Figures/outputlstat.png)
+![](Figures/outputlstat.png)
   	
 	Consider feature which is highly correlated with output variable i.e lstat
     	We can see that lstat gives around 55% accuracy
 
-	![](Figures/lstatOnly.png)
+![](Figures/lstatOnly.png)
 
 7)Model 4: OLS with LSTAT & RM only
 
-	![](Figures/outputlstatRm.png)
+![](Figures/outputlstatRm.png)
 
 	R square value is around 63%
 
-	![](Figures/lstat%Rm.png)
+![](Figures/lstat%Rm.png)
 
 ## Polynomial Regression:
 
-	![](Figures/polynomialRegression.png)
+![](Figures/polynomialRegression.png)
 
 8)Model 5: OLS with LSTAT & LSTAT polynominal features
 
-	![](Figures/outputlstatPoly.png)
+![](Figures/outputlstatPoly.png)
 
 
 	Thats approx 64% accuracy with LSTAT and its 2 degree feature (x square), but it should not overfit.. To test the overfit we need new 
     	data to check performance on Test Data also
 
-	![](Figures/polynomialLstat.png)
+![](Figures/polynomialLstat.png)
 
 9)Model 6: OLS with LSTAT, RM & LSTAT,RM polynominal features
 
-	![](Figures/outputlstatrmPoly.png)
+![](Figures/outputlstatrmPoly.png)
 
    	Manipulate some outlier of OLS(by doing log transformation) and Rm(replacing by mode)
    	Thus R-squar value for train is around 78% and test is 75%
    
-	![](Figures/lstsat&Rmpolynomail.png)
+![](Figures/lstsat&Rmpolynomail.png)
 
 10)Error Distribution:
 
-	![](Figures/errorAnalysis.png)
+![](Figures/errorAnalysis.png)
 
 ## Concluding statement 
     
