@@ -23,18 +23,25 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 ## Process
     
-    Reading the raw file
-    Removing unwanted columns
-    Univariate Analysis for deeper look in each parameter
-    Bi Variate Analysis for looking into linearity
-    Multi Variate Analysis for selecting relevant features
+    1) Reading the raw file
+    
+    2) Removing unwanted columns
+    
+    3) Univariate Analysis for deeper look in each parameter
+    
+    4) Bi Variate Analysis for looking into linearity
+    
+    5) Multi Variate Analysis for selecting relevant features
     
 ## Modelling
 
-    Modelling using linear regression
-    Modelling using linear Polynomial regression
-    Selecting and tuning model to get better results
-    Error evalutions   
+    1) Modelling using linear regression
+    
+    2) Modelling using linear Polynomial regression
+    
+    3) Selecting and tuning model to get better results
+    
+    4)Error evalutions   
     
 ## Softwares and Libraries Used:
 
@@ -77,60 +84,73 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 1)Univariant Analysis
 
-![](Figures/Box&Histogram.png)
+	![](Figures/Box&Histogram.png)
 
 2)Bivariant Analysis
 
-![](Figures/RegressionPlot.png)
+	![](Figures/RegressionPlot.png)
 
 3)Correlation Using HeatMap
 
-![](Figures/HeatMap.png)
+	![](Figures/HeatMap.png)
 
 4)Model 1 : OLS with All Feature
+
+	![](Figures/outputALL.png)
 	
 	Rsquare value is around 74%
-    	But most feature have P value higher than 0.05 example age(p-value=0.825) and indus(p-value=0.765)
+	But most feature have P value higher than 0.05 example age(p-value=0.825) and indus(p-value=0.765)
 
 5)Model 2: OLS dropping waste columns (indus, age)
+
+	![](Figures/outputdrop.png)
     	
 	Thus after removing indus and age the R-square value is some what same i.e 74% thus we can see that age and indus does not add any 
     	value.
 
 6)Model 3: OLS with LSTAT only
+
+	![](Figures/outputlstat.png)
   	
 	Consider feature which is highly correlated with output variable i.e lstat
     	We can see that lstat gives around 55% accuracy
 
-![](Figures/lstatOnly.png)
+	![](Figures/lstatOnly.png)
 
 7)Model 4: OLS with LSTAT & RM only
-	
+
+	![](Figures/outputlstatRm.png)
+
 	R square value is around 63%
 
-![](Figures/lstat%Rm.png)
+	![](Figures/lstat%Rm.png)
 
 ## Polynomial Regression:
 
-![](Figures/polynomialRegression.png)
+	![](Figures/polynomialRegression.png)
 
 8)Model 5: OLS with LSTAT & LSTAT polynominal features
+
+	![](Figures/outputlstatPoly.png)
+
 
 	Thats approx 64% accuracy with LSTAT and its 2 degree feature (x square), but it should not overfit.. To test the overfit we need new 
     	data to check performance on Test Data also
 
-![](Figures/polynomialLstat.png)
+	![](Figures/polynomialLstat.png)
 
 9)Model 6: OLS with LSTAT, RM & LSTAT,RM polynominal features
+
+	![](Figures/outputlstatrmPoly.png)
 
    	Manipulate some outlier of OLS(by doing log transformation) and Rm(replacing by mode)
    	Thus R-squar value for train is around 78% and test is 75%
    
-![](Figures/lstsat&Rmpolynomail.png)
+	![](Figures/lstsat&Rmpolynomail.png)
 
 10)Error Distribution:
 
-![](Figures/errorAnalysis.png)
+	![](Figures/errorAnalysis.png)
 
 ## Concluding statement 
     
