@@ -105,14 +105,14 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 ![](Figures/outputdrop.png)
     	
-	Thus after removing indus and age the R-square value is some what same i.e 74% thus we can see that age and indus does not add any 
-    	value.
+	Thus after removing indus and age the R-square value is some what same i.e 74%.
+	We can see that age and indus does not add any value.
 
 6)Model 3: OLS with LSTAT only
 
 ![](Figures/outputlstat.png)
   	
-	Consider feature which is highly correlated with output variable i.e lstat
+	Consider feature which is highly correlated with output variable i.e lstat.
     	We can see that lstat gives around 55% accuracy
 
 ![](Figures/lstatOnly.png)
