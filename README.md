@@ -121,7 +121,7 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 ![](Figures/outputlstatRm.png)
 
-	R square value is around 63%
+	R square value using lstat and rm is around 63%. Thus rm is also an important feature and contributes to output variable.
 
 ![](Figures/lstat%Rm.png)
 
@@ -141,7 +141,7 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 
 9)Model 6: OLS with LSTAT, RM & LSTAT,RM polynominal features
 
-![](Figures/outputlstatrmPoly.png)
+![](Figures/outputlstatrmploy.png)
 
    	Manipulate some outlier of OLS(by doing log transformation) and Rm(replacing by mode)
    	Thus R-squar value for train is around 78% and test is 75%
