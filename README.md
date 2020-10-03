@@ -113,7 +113,7 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 ![](Figures/outputlstat.png)
   	
 	Consider feature which is highly correlated with output variable i.e lstat.
-    	We can see that lstat gives around 55% accuracy
+	We can see that lstat gives around 55% accuracy
 
 ![](Figures/lstatOnly.png)
 
@@ -134,8 +134,8 @@ In this project I'm trying to analyze and visualize the Most Famous Example i.e 
 ![](Figures/outputlstatPoly.png)
 
 
-	Thats approx 64% accuracy with LSTAT and its 2 degree feature (x square), but it should not overfit.. To test the overfit we need new 
-    	data to check performance on Test Data also
+	Thats approx 64% accuracy with LSTAT and its 2 degree feature (x square), but it should not overfit.
+	To test the overfit we need new data to check performance on Test Data also
 
 ![](Figures/polynomialLstat.png)
 
